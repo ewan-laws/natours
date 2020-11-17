@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "node-sass sass/style.scss css/style.css",
     "compile:sass": "node-sass sass/style.scss css/style.css -w"
   },
   "author": "",
