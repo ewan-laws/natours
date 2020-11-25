@@ -29,6 +29,7 @@
         // transform: scale(80);
     }
     &__nav {
+        speak: never;
         height: 100vh;
         position: fixed;
         top: 0;
@@ -126,6 +127,7 @@
         background-color: transparent;
     }
 
+
     &__checkbox:checked + &__button &__icon::before {
         top: 0;
         transform: rotate(135deg);
@@ -134,5 +136,9 @@
     &__checkbox:checked + &__button &__icon::after {
         top: 0;
         transform: rotate(-135deg);
+    }
+
+    &__checkbox:checked ~ &__nav {
+        speak: initial;
     }
 }
